@@ -1,4 +1,69 @@
+.titulo{
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+}
+
+#img1{
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+#img2{
+    display: inline-block;
+    
+    
+}
+
+#bibliografia{
+    display: inline;
+}
+
+#classi{
+    text-decoration: underline;
+    color: blue;
+}
+
+body{
+    background-color: rgb(205, 179, 230);
+}
+
+
+
 nav li{
     display: inline;
-    margin-left: 20px;
+    margin-left: 260px;
+    background-color: rgb(181, 178, 201);
+   
+}
+
+nav{
+    background-color: rgb(158, 158, 236);
+}
+
+h1{
+    font-family: monospace;
+}
+
+article{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    height: 170px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+aside{
+    margin: 20px;
+    display: inline-block;
+    float: right;
+
+}
+
+section p{
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
 }
