@@ -6,13 +6,20 @@
 
 #img1{
     margin-left: 20%;
-    margin-top: 3%;
+    margin-top: 2%;
+    display: inline-block;
 }
 
 #img2{
     display: inline-block;
+    margin-left: 58%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     
-    
+}
+
+#img3{
+
 }
 
 #bibliografia{
@@ -22,13 +29,35 @@
 #classi{
     text-decoration: underline;
     color: blue;
+    text-align: center;
+}
+
+#intro{
+        display: inline-block;
+        width: 400px;
+        text-align: center;
+        height: 170px;
+        margin-left: 200px;
+        margin-bottom: 30px;
+}
+
+#soco{
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 10%;
+    position: absolute;
+
 }
 
 body{
     background-color: rgb(205, 179, 230);
 }
 
-
+footer{
+    float: right;
+}
 
 nav li{
     display: inline;
@@ -45,25 +74,28 @@ h1{
     font-family: monospace;
 }
 
-article{
-    display: inline-block;
-    width: 300px;
-    text-align: center;
-    height: 170px;
-    margin-left: 200px;
-    margin-bottom: 30px;
-}
+
 
 aside{
     margin: 20px;
     display: inline-block;
-    float: right;
+    position: fixed;
+    right: 0;
+    top: 0%;
+    border: solid red 2px;
 
 }
 
 section p{
-    width: 400px;
+    width: 500px;
     text-align: center;
     display: inline-block;
-    margin: 20px;
+    
+    
+}
+
+section ul{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
