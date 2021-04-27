@@ -86,3 +86,19 @@ if(n%2 != 0){
 }
 */
 
+//exercicio 6
+let numero = 14;
+let NumDivisiveis = [];
+
+for (index = 2; index <= numero; index += 1) {
+  if (numero % index === 0) {
+    NumDivisiveis.push(index);
+  }
+}
+if (NumDivisiveis == numero) {
+  console.log(
+    `O ${numero} é primo, pois é divisível apenas por 1 e ${NumDivisiveis}`
+  );
+} else {
+  console.log(`O número não é primo, pois é divisível por ${NumDivisiveis}`);
+}
