@@ -1,4 +1,4 @@
-let n = 5;
+let n = 7;
 /* Exercicio 1
 let rept = "";
 if (n > 0) {
@@ -61,3 +61,28 @@ if (n > 0) {
   }
 }
 */
+
+/*BONUS exercicio 5
+
+if(n%2 != 0){
+  let meio = (n + 1) / 2;
+  let left = meio;
+  let right = meio;
+
+  for (let linhaIndex = 1; linhaIndex <= meio; linhaIndex += 1) {
+    let linha = "";
+    for (let colunaIndex = 1; colunaIndex <= n; colunaIndex += 1) {
+      if (colunaIndex == left || colunaIndex == right || linhaIndex == meio) {
+        linha += '*';
+      }else{
+        linha += ' ';
+      }
+    }
+    console.log(linha)
+    right += 1;
+    left -= 1;
+    
+  }
+}
+*/
+
