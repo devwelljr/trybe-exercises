@@ -152,7 +152,31 @@ let infoPatinhas = {
 // }
 // console.log(final('trybe', 'be'));
 
-
 //BONUS
 
+function algarismosRomanos(romanos) {
+  let letras = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  };
+  let resultado = 0;
+  let array = [];
 
+  for (let index in romanos) {
+    array[index] = letras[romanos[index]];
+  }
+  for (let i in array) {
+    if (array[i] < array[i + 1]) {
+      resultado = array[i + 1] -= array[i];
+    } else {
+      resultado += array[i];
+    }
+  }
+  return resultado;
+}
+console.log(algarismosRomanos("IX"));
