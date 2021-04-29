@@ -131,7 +131,7 @@ if(valorCusto < 0 | valorVenda < 0){
   console.log(lucro = (valorVenda - valorCusto* 1.2)*1000)
 }*/
 
-let salariobruto = 2700;
+let salariobruto = 2600;
 let salarioliquidoinss;
 let salarioliquido;
 let faixasalarial = 3;
