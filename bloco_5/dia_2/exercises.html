@@ -93,7 +93,7 @@
       document.querySelector("div").appendChild(div4);
 
       //EXERCICIO 7
-      let img = document.createElement('src');
+      let img = document.createElement('img');
       img.src = "https://picsum.photos/200";
       img.className = "small-image";
       document.querySelector("div").firstElementChild.nextElementSibling.appendChild(img);
@@ -108,6 +108,11 @@
         lista.appendChild(list);
       }
       document.querySelector(".main-content").lastElementChild.appendChild(lista);
+
+      document.querySelectorAll("li")[9].remove();
+      document.querySelectorAll("li")[9].remove();
+
+
 
       
 
