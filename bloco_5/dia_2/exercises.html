@@ -73,7 +73,7 @@
       div2.className = "center-content";
       document.querySelector("div").appendChild(div2);
 
-      div2.parentElement.style.color = 'green'
+      div2.parentElement.style.color = "green";
 
       //EXERCICIO 4
       let p1 = document.createElement("p");
@@ -93,28 +93,40 @@
       document.querySelector("div").appendChild(div4);
 
       //EXERCICIO 7
-      let img = document.createElement('img');
+      let img = document.createElement("img");
       img.src = "https://picsum.photos/200";
       img.className = "small-image";
-      document.querySelector("div").firstElementChild.nextElementSibling.appendChild(img);
+      document
+        .querySelector("div")
+        .firstElementChild.nextElementSibling.appendChild(img);
 
       //EXERCICIO 8
-      let num = ['Zero', 'Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
-      let lista = document.createElement('ul');
-      for(let index = 0; index < num.length; index += 1){
+      let num = [
+        "Zero",
+        "Um",
+        "Dois",
+        "Tres",
+        "Quatro",
+        "Cinco",
+        "Seis",
+        "Sete",
+        "Oito",
+        "Nove",
+        "Dez",
+      ];
+      let lista = document.createElement("ul");
+      for (let index = 0; index < num.length; index += 1) {
         let lis = num[index];
         let list = document.createElement("li");
         list.innerText = lis;
         lista.appendChild(list);
       }
-      document.querySelector(".main-content").lastElementChild.appendChild(lista);
+      document
+        .querySelector(".main-content")
+        .lastElementChild.appendChild(lista);
 
       document.querySelectorAll("li")[9].remove();
       document.querySelectorAll("li")[9].remove();
-
-
-
-      
 
       //EXERCICIO 9
       let linha2 = document.createElement("h3");
@@ -126,9 +138,6 @@
       document.querySelector("div").appendChild(linha2);
       document.querySelector("div").appendChild(linha3);
       document.querySelector("div").appendChild(linha4);
-
-
-
     </script>
   </body>
 </html>
