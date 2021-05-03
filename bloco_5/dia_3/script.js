@@ -52,5 +52,18 @@ Dias();
   holydays();
 
   //EXERCICIO 3
+let butao = document.querySelector('#btn-holiday');
+  butao.addEventListener('click', function(){
+  document.querySelectorAll('.holiday')[0].style.background = 'rgb(152,255,152)';
+  document.querySelectorAll('.holiday')[1].style.background = 'rgb(152,255,152)';
+  document.querySelectorAll('.holiday')[2].style.background = 'rgb(152,255,152)';
+  })
+  butao.addEventListener('dblclick', function(){
+  document.querySelectorAll('.holiday')[0].style.background = 'rgb(238,238,238)';
+  document.querySelectorAll('.holiday')[1].style.background = 'rgb(238,238,238)';
+  document.querySelectorAll('.holiday')[2].style.background = 'rgb(238,238,238)';
+  })
+
+  //EXERCICIO 4
   
   
