@@ -21,12 +21,18 @@ function AlteraTexto(evento){
 
 input.addEventListener('keypress', AlteraTexto);
 
+let linkkk = document.querySelector('.myWebpage');
+
+myWebpage.addEventListener('dblclick', function (){
+  linkkk = window.open("https://github.com/devwelljr/trybe-exercises", "_blanck");
+})
+
+myWebpage.addEventListener('mouseover', function (){
+  myWebpage.style.color = 'red';
+})
+
+
 /*
- Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
-com a classe 'tech';
- Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
-redirecione para alguma página;
-1. Que tal redirecionar para seu portifólio?
  Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 a cor do mesmo;
 
