@@ -19,6 +19,8 @@ function createDaysOfTheWeek() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
   let lista = document.querySelector('#days');
+
+  function Dias (){ 
   for (let index = 0; index < dezDaysList.length; index += 1){
     let lis = dezDaysList[index];
     let list = document.createElement("li");
@@ -35,4 +37,20 @@ function createDaysOfTheWeek() {
     list.innerText = lis;
     lista.appendChild(list);
   }
+}
+Dias();
+
+  //EXERCICIO 2
+  let butaoF = document.querySelector('.buttons-container');
+  function holydays(feriados){
+    let butao = document.createElement('button');
+    let butaoEscrita = document.createTextNode('Feriados');
+    butao.id = "btn-holiday";
+    butao.appendChild(butaoEscrita);
+    butaoF.appendChild(butao);
+  }
+  holydays();
+
+  //EXERCICIO 3
+  
   
