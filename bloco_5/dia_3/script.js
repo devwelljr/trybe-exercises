@@ -65,5 +65,14 @@ let butao = document.querySelector('#btn-holiday');
   })
 
   //EXERCICIO 4
+  let butaoS = document.querySelector('.buttons-container');
+  function friday(SextaFeira){
+    let butao = document.createElement('button');
+    let butaoEscrita = document.createTextNode('Sexta-feira');
+    butao.id = "btn-friday";
+    butao.appendChild(butaoEscrita);
+    butaoS.appendChild(butao);
+  }
+  friday();
   
-  
+  //EXERCICIO 5
