@@ -149,13 +149,38 @@ function diaMouseSobre() {
 
 function diaMouseFora() {
   let dias = document.querySelector("#days");
-  dias.addEventListener('mouseout', function(evento){
+  dias.addEventListener("mouseout", function (evento) {
     evento.target.style.fontSize = "20px";
     evento.target.style.fontWeight = "200";
-  })
+  });
 }
 
 diaMouseSobre();
 diaMouseFora();
 
 //EXERCICIO 7
+
+function adicionaTarefa(nomeDaTarefa) {
+  let minhasTarefas = document.querySelector(".my-tasks");
+  let criarTarefas = document.createElement("span");
+
+  criarTarefas.innerHTML = nomeDaTarefa;
+  minhasTarefas.appendChild(criarTarefas);
+}
+
+adicionaTarefa("Tarefa :");
+
+//EXERCICIO 8
+
+function legendaComCor(cor) {
+  let minhasTarefas = document.querySelector(".my-tasks");
+  let criarDiv = document.createElement("div");
+
+  criarDiv.className = "task";
+  criarDiv.style.background = cor;
+  minhasTarefas.appendChild(criarDiv);
+}
+legendaComCor('red');
+
+//EXERCICIO 9
+
