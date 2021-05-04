@@ -180,7 +180,19 @@ function legendaComCor(cor) {
   criarDiv.style.background = cor;
   minhasTarefas.appendChild(criarDiv);
 }
-legendaComCor('red');
+legendaComCor("rgb(57, 255, 20)");
 
 //EXERCICIO 9
+function colocaClassTarefa() {
+  let divTarefa = document.querySelector(".task");
+  let tarefaSelecionada = document.getElementsByClassName("task selected");
+  divTarefa.addEventListener("click", function (evento) {
+    if (tarefaSelecionada.length === 0) {
+      evento.target.className = "task selected";
+    }else {
+      evento.target.className = "task";
+    }
+  });
+}
 
+colocaClassTarefa();
