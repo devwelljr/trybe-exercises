@@ -76,3 +76,18 @@ let butao = document.querySelector('#btn-holiday');
   friday();
   
   //EXERCICIO 5
+  let butaoSS = document.querySelector('#btn-friday');
+  butaoSS.addEventListener('click', function(){
+  document.querySelectorAll('.friday')[0].innerText = 'SEXTOU!!! :)';
+  document.querySelectorAll('.friday')[1].innerText = 'SEXTOU!!! :)';
+  document.querySelectorAll('.friday')[2].innerText = 'SEXTOU!!! :)';
+  document.querySelectorAll('.friday')[3].innerText = 'SEXTOU!!! :)';
+  })
+  butaoSS.addEventListener('dblclick', function(){
+  document.querySelectorAll('.friday')[0].innerText = '4';
+  document.querySelectorAll('.friday')[1].innerText = '11';
+  document.querySelectorAll('.friday')[2].innerText = '18';
+  document.querySelectorAll('.friday')[3].innerText = '25';
+  })
+
+  //EXERCICIO 6
