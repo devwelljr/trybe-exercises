@@ -189,10 +189,23 @@ function colocaClassTarefa() {
   divTarefa.addEventListener("click", function (evento) {
     if (tarefaSelecionada.length === 0) {
       evento.target.className = "task selected";
-    }else {
+    } else {
       evento.target.className = "task";
     }
   });
 }
 
 colocaClassTarefa();
+
+//EXERCICIO 10
+
+function corDias() {
+  let dias = document.querySelector("#days");
+  dias.addEventListener('click', function(evento){
+    evento.target.style.color = 'rgb(57, 255, 20)';
+  })
+  dias.addEventListener('dblclick', function(event){
+    event.target.style.color = 'rgb(119,119,119)';
+  })
+}
+corDias();
