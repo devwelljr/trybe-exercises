@@ -201,11 +201,39 @@ colocaClassTarefa();
 
 function corDias() {
   let dias = document.querySelector("#days");
-  dias.addEventListener('click', function(evento){
-    evento.target.style.color = 'rgb(57, 255, 20)';
-  })
-  dias.addEventListener('dblclick', function(event){
-    event.target.style.color = 'rgb(119,119,119)';
-  })
+  dias.addEventListener("click", function (evento) {
+    evento.target.style.color = "rgb(57, 255, 20)";
+  });
+  dias.addEventListener("dblclick", function (event) {
+    event.target.style.color = "rgb(119,119,119)";
+  });
 }
 corDias();
+
+//BONUS
+
+function adicionaCompromisso() {
+  let butaoA = document.querySelector("#btn-add");
+  let inp = document.querySelector("#task-input");
+  let ulCompromissos = document.querySelector(".task-list");
+  butaoA.addEventListener("click", function () {
+    if (inp.value.length > 0) {
+      let linha = document.createElement("li");
+      linha.innerText = inp.value;
+
+      ulCompromissos.appendChild(linha);
+    } else {
+      alert("Erro: Digite algo no campo de digitação.");
+    }
+  });
+
+  inp.addEventListener("keyup", function (event) {
+    if (inp.value.length > 0 && event.keyCode === 13) {
+      let linha = document.createElement("li");
+      linha.innerText = inp.value;
+
+      ulCompromissos.appendChild(linha);
+    } 
+  });
+}
+adicionaCompromisso();
