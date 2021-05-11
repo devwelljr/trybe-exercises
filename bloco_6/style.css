@@ -1,0 +1,20 @@
+input {
+  margin: 5px;
+}
+fieldset {
+  background-color: #eeeeee;
+  border: 2px groove;
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+#endereço{
+    resize: none;
+}
