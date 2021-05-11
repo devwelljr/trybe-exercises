@@ -27,6 +27,7 @@ const estados = [
   "Distrito Federal"
 ];
 const selectEstados = document.getElementById("states");
+const apagar = document.getElementById("botaoLimpar");
 
 function criarEstados() {
   for (let index = 0; index < estados.length; index += 1) {
@@ -36,3 +37,16 @@ function criarEstados() {
   }
 }
 criarEstados();
+
+apagar.addEventListener('click', function () {
+    document.getElementById('nome').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('cpf').value = '';
+    document.getElementById('city').value = '';
+    document.getElementById('endereço').value = '';
+    document.getElementById('resumo').value = '';
+    document.getElementById('cargo').value = '';
+    document.getElementById('descricao').value = '';
+    document.getElementById('data').value = '';
+    document.getElementById('states').value = '';
+})

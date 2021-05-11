@@ -2,11 +2,12 @@ input {
   margin: 5px;
 }
 fieldset {
-  background-color: #eeeeee;
+  background-color: #eeeaae;
   border: 2px groove;
   display: block;
   margin-left: 2px;
   margin-right: 2px;
+  text-align: center;
 }
 h1 {
   text-align: center;
@@ -18,3 +19,21 @@ h2 {
 #endereço{
     resize: none;
 }
+
+#type {
+    display: block;
+}
+
+#resumo {
+    resize: none;
+}
+
+#fielset2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#descricao{
+    resize: none;
+}
+
