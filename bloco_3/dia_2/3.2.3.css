@@ -1,0 +1,25 @@
+h1{
+    font-family: sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+p{
+    font-weight: 600;
+}
+body{
+    font-size: 16px;
+}
+p{
+    font-size: 3em;
+    line-height: 0.1;
+    text-align: center;
+}
+#a{
+    background-color: yellow;
+}
+#v{
+    background-color: red;
+}
+#m{
+    background-color: brown;
+}
