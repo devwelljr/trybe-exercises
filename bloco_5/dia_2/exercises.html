@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // EXERCICIO 1
+      let linha1 = document.createElement("h1");
+      linha1.className = "title";
+      linha1.innerText = "Exercício 5.2 - JavaScript DOM";
+      document.querySelector("body").appendChild(linha1);
+
+      //EXERCICIO 2
+      let div1 = document.createElement("div");
+      div1.className = "main-content";
+      document.querySelector("body").appendChild(div1);
+
+      // EXERCICIO 3
+      let div2 = document.createElement("div");
+      div2.className = "center-content";
+      document.querySelector("div").appendChild(div2);
+
+      div2.parentElement.style.color = "green";
+
+      //EXERCICIO 4
+      let p1 = document.createElement("p");
+      p1.innerText = "EXERCICIO 4";
+      document.querySelector("div").firstElementChild.appendChild(p1);
+
+      //EXERCICIO 5
+      let div3 = document.createElement("div");
+      div3.className = "left-content";
+      document.querySelector("div").appendChild(div3);
+
+      div3.remove();
+
+      //EXERCICIO 6
+      let div4 = document.createElement("div");
+      div4.className = "right-content";
+      document.querySelector("div").appendChild(div4);
+
+      //EXERCICIO 7
+      let img = document.createElement("img");
+      img.src = "https://picsum.photos/200";
+      img.className = "small-image";
+      document
+        .querySelector("div")
+        .firstElementChild.nextElementSibling.appendChild(img);
+
+      //EXERCICIO 8
+      let num = [
+        "Zero",
+        "Um",
+        "Dois",
+        "Tres",
+        "Quatro",
+        "Cinco",
+        "Seis",
+        "Sete",
+        "Oito",
+        "Nove",
+        "Dez",
+      ];
+      let lista = document.createElement("ul");
+      for (let index = 0; index < num.length; index += 1) {
+        let lis = num[index];
+        let list = document.createElement("li");
+        list.innerText = lis;
+        lista.appendChild(list);
+      }
+      document
+        .querySelector(".main-content")
+        .lastElementChild.appendChild(lista);
+
+      document.querySelectorAll("li")[9].remove();
+      document.querySelectorAll("li")[9].remove();
+
+      //EXERCICIO 9
+      let linha2 = document.createElement("h3");
+      let linha3 = document.createElement("h3");
+      let linha4 = document.createElement("h3");
+      linha2.className = "description";
+      linha3.className = "description";
+      linha4.className = "description";
+      document.querySelector("div").appendChild(linha2);
+      document.querySelector("div").appendChild(linha3);
+      document.querySelector("div").appendChild(linha4);
+    </script>
+  </body>
+</html>
