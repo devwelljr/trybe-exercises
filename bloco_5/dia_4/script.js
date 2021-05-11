@@ -1,8 +1,14 @@
+
+
+
+
 //COR DA FONTE
 function corFonte(cor) {
   let paragrafos = document.querySelectorAll(".paragrafo");
+  let titulos = document.querySelectorAll(".titulo2");
   for (index = 0; index < paragrafos.length; index += 1) {
     paragrafos[index].style.color = cor;
+    titulos[index].style.color = cor;
   }
   localStorage.setItem("fontColor", cor);
 }
