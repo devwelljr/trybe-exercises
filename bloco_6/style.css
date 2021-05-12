@@ -1,20 +1,29 @@
 input {
   margin: 5px;
 }
+
 fieldset {
-  background-color: #eeeaae;
-  border: 2px groove;
+  background-color: rgb(126, 177, 147);
+  border: 2px groove black;
+  border-radius: 4px;
   display: block;
   margin-left: 2px;
   margin-right: 2px;
   text-align: center;
 }
+
 h1 {
   text-align: center;
 }
+
 h2 {
   text-align: center;
 }
+
+body{
+    background-color: rgb(60, 153, 153);
+}
+
 
 #endereço{
     resize: none;
@@ -26,6 +35,8 @@ h2 {
 
 #resumo {
     resize: none;
+    width: 500px;
+    margin-bottom: 10px;
 }
 
 #fielset2 {
@@ -35,5 +46,6 @@ h2 {
 
 #descricao{
     resize: none;
+    margin-right: 5%;
 }
 
