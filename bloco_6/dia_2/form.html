@@ -4,123 +4,176 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
     <title>Formulário de currículo</title>
   </head>
+
   <body>
+
     <header>
       <h1>Currículo</h1>
     </header>
+
     <h2>Preencha abaixo suas informações pessoais</h2>
+
+    <hr />
+
     <fieldset id="fielset1">
-      <label for="nome"
-        >Seu nome aqui:
-        <input
-          name="Nome"
-          type="text"
-          placeholder="Digite seu nome"
-          id="nome"
-          maxlength="40"
-          required
-        />
-      </label>
+      <h2>Digite suas informações pessoais aqui abaixo</h2>
+      <br />
+      <div id="info1" class="form-group">
+        <label for="nome">
+          <input
+            class="form-control"
+            name="Nome"
+            type="text"
+            placeholder="Digite seu nome"
+            id="nome"
+            maxlength="40"
+            required
+          />
+        </label>
 
-      <label for="email"
-        >Seu E-mail aqui:
-        <input
-          name="Email"
-          type="email"
-          placeholder="Digite seu e-mail"
-          id="email"
-          maxlength="50"
-          required
-        />
-      </label>
+        <label for="cpf">
+          <input
+            class="form-control"
+            name="CPF"
+            type="text"
+            placeholder="Digite seu CPF"
+            id="cpf"
+            maxlength="11"
+            required
+          />
+        </label>
 
-      <label for="cpf"
-        >Seu CPF aqui:
-        <input
-          name="CPF"
-          type="text"
-          placeholder="Digite seu CPF"
-          id="cpf"
-          maxlength="11"
-          required
-        />
-      </label>
+        <label for="email">
+          <input
+            class="form-control"
+            name="Email"
+            type="email"
+            placeholder="Digite seu e-mail"
+            id="email"
+            maxlength="50"
+            required
+          />
+        </label>
+      </div>
+
+      <br />
+      <hr />
+    </fieldset>
+
+    <fieldset id="fieldset2">
+      <h2>Digite as informações do seu endereço</h2>
+      <div id="info2" class="form-group">
+
+        <div>
+          <label for="endereço"
+            >
+            <textarea
+              name="Endereço"
+              id="endereço"
+              cols="20"
+              rows="3"
+              maxlength="200"
+              placeholder="Digite aqui sua rua, bairro e numero."
+            ></textarea>
+          </label>
+        </div>
+
+        <label for="city"
+          >
+          <input
+            class="form-control"
+            type="text"
+            name="Cidade"
+            placeholder="Digite sua cidade"
+            id="city"
+          />
+        </label>
+
+        <label for="states">
+          <select name="estadoSelecionado" id="states" class="form-select" required>
+            <option value="" disabled selected>Selecione seu estado</option>
+          </select>
+        </label>
+
+        <label for="apartamento, casa" id="type"
+          >Selecione o tipo de residência:
+          <input type="radio" name="tipoCasa" id="apartamento" checked />
+          Apartamento <input type="radio" name="tipoCasa" id="casa" />Casa
+        </label>
+
+      </div>
+    </fieldset>
+
+    <br />
+    <hr />
+
+    <fieldset id="fieldset3">
+      <h2>Digite suas informações de trabalhos anteriores</h2>
+      <div id="resumoC" class="form-group">
+        <label for="resumo"
+          >
+          <textarea
+            name="resumo"
+            id="resumo"
+            cols="40"
+            rows="10"
+            maxlength="1000"
+            placeholder="Digite um resumo do seu currículo"
+            required
+          ></textarea>
+        </label>
+      </div>
 
       <br />
 
-      <label for="city"
-        >Sua cidade aqui:
+      <div class="form-group">
+        <label for="data"
+          >Data de início:
+          <input class="form-control" type="date" name="data" id="data" />
+        </label>
+
+        <label for="cargo"
+        >Seu último/atual cargo:
         <input
+          class="form-control"
           type="text"
-          name="Cidade"
-          placeholder="Digite sua cidade"
-          id="city"
+          name="cargo"
+          maxlength="40"
+          placeholder="Digite último cargo"
+          id="cargo"
+          required
         />
       </label>
+      </div>
 
-      <label for="states"
-        >Seu estado:
-        <select name="estadoSelecionado" id="states" required></select>
-      </label>
+      <br />
 
-      <label for="apartamento, casa" id="type"
-        >Selecione o tipo de residência: 
-        <input type="radio" name="tipoCasa" id="apartamento" checked /> Apartamento
-        <input type="radio" name="tipoCasa" id="casa" />Casa
-      </label>
-
-      <br>
-
-      <label for="endereço"
-        >Seu endereço aqui:
-        <textarea
-          name="Endereço"
-          id="endereço"
-          cols="30"
-          rows="10"
-          maxlength="200"
-          placeholder="Digite aqui sua rua, bairro e numero."
-        ></textarea>
-      </label>
-
+      <div class="form-group">
+        <label for="descricao"
+          >Descrição do cargo:
+          <textarea
+            name="descricao"
+            id="descricao"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Digite descrição do cargo"
+            required
+          ></textarea>
+        </label>
+      </div>
     </fieldset>
 
-    <fieldset id="fielset2">
+    <br>
 
-      <label for="resumo">Resumo do currículo: 
-        <textarea
-          name="resumo"
-          id="resumo"
-          cols="30"
-          rows="10"
-          maxlength="1000"
-          placeholder="Digite um resumo do seu currículo"
-          required
-        ></textarea>
-      </label>
+    <button class="btn btn-success" id="botaoLimpar">Limpar tudo</button>
 
-      <br>
-      <br>
-      <label for="cargo">Seu último/atual cargo:
-          <input type="text" name="cargo" maxlength="40" placeholder="Digite último cargo" id="cargo" required>
-      </label>
-
-      <label for="data">Data de início:
-          <input type="date" name="data" id="data">
-      </label>
-
-      <br>
-      <br>
-      <label for="descricao">Descrição do cargo:
-        <textarea name="descricao" id="descricao" cols="30" rows="10" maxlength="500" placeholder="Digite descrição do cargo"  required></textarea>
-    </label>
-
-    </fieldset>
-    <button id="botaoLimpar">Limpar tudo</button>
-
-    <script src="script.js"></script>
   </body>
 </html>
