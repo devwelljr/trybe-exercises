@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css" />
     <script src="jquery-3.6.0.min.js"></script>
     <script src="bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
     <title>Formulário de currículo</title>
   </head>
 
@@ -112,7 +111,6 @@
     </fieldset>
 
     <br />
-    <hr />
 
     <fieldset id="fieldset3">
       <h2>Digite suas informações de trabalhos anteriores</h2>
@@ -133,14 +131,12 @@
 
       <br />
 
-      <div class="form-group">
-        <label for="data"
-          >Data de início:
-          <input class="form-control" type="date" name="data" id="data" />
+      <div id="dataEcargo" class="form-group">
+        <label for="data">Data de início:
+          <input class="form-control" type="text" name="data" id="data" />
         </label>
 
-        <label for="cargo"
-        >Seu último/atual cargo:
+        <label for="cargo">
         <input
           class="form-control"
           type="text"
@@ -157,7 +153,7 @@
 
       <div class="form-group">
         <label for="descricao"
-          >Descrição do cargo:
+          >
           <textarea
             name="descricao"
             id="descricao"
@@ -174,6 +170,6 @@
     <br>
 
     <button class="btn btn-success" id="botaoLimpar">Limpar tudo</button>
-
+    <script src="script.js"></script>
   </body>
 </html>
