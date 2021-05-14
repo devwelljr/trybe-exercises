@@ -87,6 +87,7 @@
     width: 350px;
     text-align: center;
     flex-grow: 2;
+    align-self: center;
   }
   
   .aside-container h3, h4 {
