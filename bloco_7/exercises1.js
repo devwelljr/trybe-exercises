@@ -8,7 +8,13 @@ const testingScope = (escopo) => {
     let elseScope = 'Não devo ser utilizada fora meu escopo (else)';
     console.log(elseScope);
     }
-   
 }
 
 testingScope(true);
+
+//PARTE 2
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+oddsAndEvens.sort((a,b) => a-b);
+
+console.log(oddsAndEvens);
