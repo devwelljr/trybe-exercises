@@ -27,4 +27,20 @@ function achaMaior(frase) {
 }
 achaMaior(fraseDividida);
 
-//EXERCICIO 3   
+//EXERCICIO 3 no arquivo exercicio3parte2.html
+
+//EXERCICIO 4
+let string = "Tryber x aqui!";
+
+function substituiX(palavra) {
+  let stringDividida = string.split(" ");
+  for (let index = 0; index < stringDividida.length; index += 1) {
+    if (stringDividida[index] == 'x') {
+      stringDividida[index] = palavra;
+    }
+  }
+  console.log(stringDividida.join(' '));
+}
+substituiX("wellington");
+
+
