@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+  body {
+    background-color: rgba(172, 255, 47, 0.445);
+    margin: 3%;
+  }
+
+  header p {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  header p {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    padding: 10px;
+  }
+
+  body {
+    background-color: rgba(255, 200, 47, 0.445);
+    margin: 4%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  li {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  header p {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    padding: 10px;
+  }
+
+  body {
+    background-color: rgba(255, 200, 47, 0.445);
+    margin: 5%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 26px;
+  }
+
+  li {
+    font-size: 26px;
+  }
+}
