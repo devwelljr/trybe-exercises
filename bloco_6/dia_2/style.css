@@ -1,0 +1,32 @@
+header{
+  text-align: center;
+}
+
+body{
+  margin: 10px;
+  background-color: rgba(128, 0, 128, 0.329);
+}
+
+h2{
+  text-align: center;
+}
+
+textarea{
+  resize: none;
+}
+
+fieldset{
+  background-color: rgba(88, 52, 121, 0.562);
+}
+
+#info1{
+  text-align: center;
+}
+
+#info2{
+  text-align: center;
+}
+
+#fieldset3{
+  text-align: center;
+}
