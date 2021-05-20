@@ -31,6 +31,8 @@ achaMaior(fraseDividida);
 
 //EXERCICIO 4
 let string = "Tryber x aqui!";
+let skills = ['Javascript', 'HTML', 'CSS', 'react', 'python'];
+let skillsArrumadas = skills.sort();
 
 function substituiX(palavra) {
   let stringDividida = string.split(" ");
@@ -39,8 +41,15 @@ function substituiX(palavra) {
       stringDividida[index] = palavra;
     }
   }
-  console.log(stringDividida.join(' '));
+  let fraseFinal = stringDividida.join(' ');
+  return fraseFinal;
 }
-substituiX("wellington");
+console.log(substituiX("wellington"));
 
-
+function addSkills () {
+  let frase = '';
+  frase = `${substituiX('wellington')} Minhas cinco principais habilidades são: 
+  ${skillsArrumadas}`;
+  return frase;
+}
+console.log(addSkills());
