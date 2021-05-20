@@ -7,25 +7,27 @@ function fatorial(numero) {
     let fat = numero * index;
     resultado = fat + resultado;
   }
-  console.log(resultado);
+  return resultado;
 }
 
-fatorial(numero);
+console.log(fatorial(numero));
 
 //EXERCICIO 2
 const frase = "Antônio foi no banheiro e não sabemos o que aconteceu";
 let fraseDividida = frase.split(" ");
-let maior = "";
 
 function achaMaior(frase) {
+  let maior = "";
+  let result = '';
   for (let i of fraseDividida) {
     if (i.length > maior.length) {
       maior = i;
     }
+    result = maior;
   }
-  console.log(maior);
+  return maior;
 }
-achaMaior(fraseDividida);
+console.log(achaMaior(fraseDividida));
 
 //EXERCICIO 3 no arquivo exercicio3parte2.html
 
