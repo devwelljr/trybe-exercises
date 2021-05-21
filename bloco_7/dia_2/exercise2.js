@@ -5,7 +5,6 @@ const lesson1 = {
   turno: "manhã",
 };
 
-
 const lesson2 = {
   materia: "História",
   numeroEstudantes: 20,
@@ -73,3 +72,53 @@ function verificaPar(lesson, key, value) {
   let resposta = chaves.includes(key) && valores.includes(value);
   return resposta;
 }
+
+//BONUS 1
+function quantidadeMatematicos(allLessons) {
+  let materia1 = allLessons.lesson1.materia;
+  let materia2 = allLessons.lesson2.materia;
+  let materia3 = allLessons.lesson3.materia;
+  let numeroMatematicos = 0;
+  if (materia1 === 'Matemática') {
+    numeroMatematicos += allLessons.lesson1.numeroEstudantes;
+  }
+  if (materia2 === 'Matemática') {
+    numeroMatematicos += allLessons.lesson2.numeroEstudantes;
+  }
+  if (materia3 === 'Matemática') {
+    numeroMatematicos += allLessons.lesson3.numeroEstudantes;
+  }
+  return numeroMatematicos;
+}
+
+//BONUS 2
+function relatorio (allLessons, professor) {
+  let professor1 = allLessons.lesson1.professor;
+  let professor2 = allLessons.lesson2.professor;
+  let professor3 = allLessons.lesson3.professor;
+  let objetoResposta = {
+    professor: 'a',
+    aulas: [],
+    estudantes: 0,
+  }
+
+  if (professor === professor1){
+    objetoResposta['professor'] = professor1;
+    objetoResposta['aulas'] += allLessons.lesson1.materia;
+    objetoResposta['estudantes'] += allLessons.lesson1.numeroEstudantes;
+  }
+
+  if (professor === professor2){
+    objetoResposta['professor'] = professor2;
+    objetoResposta['aulas'] += allLessons.lesson2.materia;
+    objetoResposta['estudantes'] += allLessons.lesson2.numeroEstudantes;
+  }
+
+  if (professor === professor3){
+    objetoResposta['professor'] = professor3;
+    objetoResposta['aulas'] += allLessons.lesson3.materia;
+    objetoResposta['estudantes'] += allLessons.lesson3.numeroEstudantes;
+  }
+  return objetoResposta;
+}
+console.log(relatorio(allLessons, 'Maria Clara'));
