@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARTE 2 Exercicio 3</title>
+  </head>
+  <body>
+    <div>
+      <button id="botao">clique aqui</button>
+    </div>
+    <div>
+        <ul id="vezesClicado"></ul>
+    </div>
+
+    <script>
+      const but = document.querySelector("#botao");
+      const lugar = document.querySelector('#vezesClicado');
+      const criarLi = document.createElement('li');
+      let vezes = 0;
+      let clickCout = 0;
+      but.addEventListener("click", () => {
+        clickCout += 1;
+        vezes = clickCout;
+        criarLi.innerHTML = vezes;
+        lugar.appendChild(criarLi);
+      });
+      
+    </script>
+  </body>
+</html>
