@@ -19,10 +19,10 @@ function pro () {
       }
       resolve(somaDividida);
       } 
-      reject(console.log("É mais de oito mil! Essa promise deve estar quebrada!"));
+      reject();
     });
     pros
     .then((arrayResult) => console.log(`Promise resolvida, resultado das divisões: ${arrayResult}`))
-    .catch((error) => error);
+    .catch(() => console.log("É mais de oito mil! Essa promise deve estar quebrada!"));
   }
   pro();
