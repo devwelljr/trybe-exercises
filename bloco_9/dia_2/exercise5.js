@@ -19,15 +19,14 @@ function pro() {
       }
       resolve(somaDividida);
     }
-    reject(
-      console.log('É mais de oito mil! Essa promise deve estar quebrada!')
-    );
+    reject();
   });
   
   pros
-    .then((arrayResult) =>
-      console.log(`Promise resolvida, resultado das divisões: ${arrayResult}`)
-    )
-    .catch((error) => error);
+    .then((arrayResult) => {
+    const somaDaDivisoes = arrayResult.reduce((acc, number) => acc += number)
+    console.log(`Promise resolvida, resultado das divisões: ${arrayResult} e sua soma é ${somaDaDivisoes}`)
+    })
+    .catch(() => console.log('É mais de oito mil! Essa promise deve estar quebrada!'));
 }
 pro();
