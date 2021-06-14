@@ -16,4 +16,6 @@ function hydrate(string) {
   return saida;
 }
 
+//Referencia: https://github.com/tryber/sd-012-project-playground-functions/pull/27/files
+
 module.exports = hydrate;
