@@ -1,0 +1,14 @@
+1)O que é um código que é executado de modo assíncrono? Qual é a diferença disso para um código que é executado de modo síncrono?
+Um código executado de modo síncrono segue a ordem das funções de cima pra baixo na sua execução, já o modo assíncrono a função é jogada a outra área de execução em paralelo a outras, voltando quando executada voltando seu retorno.
+
+2)Quando você tem que enfileirar várias callbacks , que problema surge?
+Com vários callbacks para as diferentes funções, fica mais díficil organizar sua ordem de execução em aplicações maiores, ocasionando um callbackHell em que a várias funções dentro de funções.
+
+3)Por que as Promises são uma forma de se resolver esse problema?
+Elas já recebem como paramêtro oque fazer para a resolução e em caso de ERRO, oque economiza linhas e deixa o código mais assertivo do que várias callbacks para cada cenário(resolvido ou ERRO).
+
+4)Quando você vai se comunicar com uma API , tal comunicação deve ser síncrona ou assíncrona? Lembre-se de que o serviço ao qual você está se conectando pode demorar muito ou pouco para dar retorno, pode estar fora do ar etc.
+A comunicação com uma API deve ser assíncrona para que sua aplicação não fique parada caso a API não esteja disponível.
+
+5)Dada a resposta anterior, o que é fetch e para que ele serve?
+O método fetch() serve para acessar e manipular partes de dados, com requests e responses, com ele é possível buscar dados em um banco de forma assíncrona.
