@@ -1,5 +1,5 @@
-const service = require('./mockando-modulos.js');
-//npm test mockando-modulos.test.js
+const service = require('./mockando-funcoes.js');
+//npm test mockando-funcoes.test.js
 
 //EXEMPLO 1 QUE NÃO FUNCIONA POR NÃO SER UMA SIMULAÇÃO DA FUNÇÃO
 test('#randomRgbColor1', () => {
