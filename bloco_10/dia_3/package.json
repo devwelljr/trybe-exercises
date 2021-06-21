@@ -1,0 +1,19 @@
+{
+  "name": "dia_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mocks.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
