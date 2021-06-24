@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.profile-img {
+  width: 400px;
+}
+
+.profiles {
+  background-color: rgb(0, 183, 255);
+  margin: 5%;
+  text-align: center;
+}
+
+.divPai {
+  display: flex;
+}
