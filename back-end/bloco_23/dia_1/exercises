@@ -1,0 +1,29 @@
+EXERCICIO 1
+db.bios.find({ _id: 8  });
+
+EXERCICIO 2
+db.bios.findOne({ _id: 8  }, { name: 1 });
+
+EXERCICIO 3
+db.bios.findOne({ _id: 8  }, { name: 1, birth: 1 });
+
+EXERCICIO 4
+db.bios.findOne({ "name.first": "John" });
+
+EXERCICIO 5
+db.bios.find().limit(3).pretty();
+
+EXERCICIO 6
+db.bios.find().skip(5).pretty();
+
+EXERCICIO 7
+db.bios.count();
+
+EXERCICIO 8
+db.bios.count({ status: "PUBLISH"  });
+
+EXERCICIO 9
+db.bios.find({}, { _id: 0, title: 1, isbn: 1, pageCount: 1 }).limit(3).pretty();
+
+EXERCICIO 10
+db.bios.find({ status: "MEAP" }, { title: 1, authors: 1, status: 1 }).skip(5).limit(10).pretty();
