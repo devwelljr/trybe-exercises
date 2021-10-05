@@ -1,0 +1,14 @@
+// EXERCICIO 1
+db.restaurants.find({ rating: { $not: { $lte: 5 } } }).count();
+
+// EXERCICIO 2
+db.restaurants.find({ $or: [{rating: { $not: { $lte: 5 } }}, {borough: { $eq: "Brooklyn" }}] }).count();
+
+// EXERCICIO 3
+db.restaurants.find({ $and: [{borough: { $in: ["Queens", "Staten Island", "Brooklyn"] }}, { rating: { $gt: 4  } }] }).count();
+
+// EXERCICIO 4
+db.restaurants.find({ $nor: [{cuisine: { $eq: "American" }}, { rating: { $eq: 1  } }] }).count();
+
+// EXERCICIO 5
+db.restaurants.find({ $and: [{ $or: [{ rating: { $gt: 6, $lt: 10 } }] }, { $or: [{ borough: 'Brooklyn' }, { cuisine: { $ne: 'Delicatessen' } }] }, ], }).count();
