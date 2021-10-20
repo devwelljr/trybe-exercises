@@ -1,0 +1,44 @@
+use("class");
+
+// EXERCICIO 1
+db.transactions.aggregate([
+  {
+    $group : {
+      _id : "$bank",
+    },
+  },
+]);
+
+// EXERCICIO 2
+db.transactions.aggregate([
+  {
+    $group : {
+      _id : "$bank",
+    	total: { $sum: '$value' },
+      transações: { $sum: 1 },
+    },
+  },
+]);
+
+// EXERCICIO 3
+db.transactions.aggregate([
+  {
+    $group : {
+      _id : "$bank",
+    	total: { $sum: '$value' },
+    },
+  },
+]);
+
+// EXERCICIO 4
+db.transactions.aggregate([
+  {
+		$group: {
+      _id: '$bank',
+      total: { $sum: '$value' },
+    },
+  },
+  {
+		$match: {"total": { $gt: 1000}}
+  },
+]);
