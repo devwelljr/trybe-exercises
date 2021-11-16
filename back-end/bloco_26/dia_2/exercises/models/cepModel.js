@@ -1,22 +1,14 @@
 const connection = require("./connection");
 
-const getNewCep = ({ cep, logradouro, bairro, localidade, uf }) => ({
-  cep: formatCep(cep),
-  logradouro,
-  bairro,
-  localidade,
-  uf,
-});
-
 const findAddressByCep = async (cepToSearch) => {
   const treatedCep = cepToSearch.replace("-", "");
 
   const query =
-    "SELECT cep, logradouro, bairro, localidade, uf FROM ceps WHERE cep = ?";
+    `SELECT cep, logradouro, bairro, localidade, uf FROM ceps WHERE cep = ${treatedCep}`;
 
   const result = await connection
-    .execute(query, [treatedCep])
-    .then(([results]) => (results.length ? results[0] : null));
+    .execute(query)
+    .then(([results]) => (results.length > 0 ? results[0] : null));
 
   if (!result) return null;
 

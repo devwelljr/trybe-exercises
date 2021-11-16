@@ -1,4 +1,4 @@
-const rescue = require("express-rescue");
+// const rescue = require("express-rescue");
 const service = require("../services/cepService");
 
 const findAddressByCep = async (req, res) => {
@@ -13,7 +13,7 @@ const findAddressByCep = async (req, res) => {
   return res.status(200).json(address);
 };
 
-const allCEPs = async (_req, res) => {
+const allCEPs = async (_req, res, next) => {
   const ceps = await service.allCEPs();
 
   if (ceps.error) {
