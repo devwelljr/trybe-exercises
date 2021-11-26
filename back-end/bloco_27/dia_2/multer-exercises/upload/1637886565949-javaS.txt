@@ -1,0 +1,95 @@
+JAVASCRIPT
+
+console.log() mostra na tela
+return = retorna o valor
+var = variavel
+const = constante
+let = atribui valores destintos
+** = potencialização (2 ** 3)
+% = resto da divisão (10 % 2)
+var += (var + x)
+<br/> quebra de linha
+
+OPERADORES DE COMPARAÇÃO
+>
+<
+>=
+<=
+=== (IGUALDADE)
+!== (DESEIGUALDADE)
+
+OPERADORES LOGICOS 
+&& = e
+|| = ou
+! = negação
+ 
+ESTRUTURAS CONDICIONAIS
+
+if () {
+}else{
+}
+
+ENCADEADA
+
+IF(CONDICAO1) {
+} ELSE IF (CONDICAO 2) {
+} ELSE {
+}
+
+ARRAYS
+
+["", "", "",]
+[0,1,2]
+var.length
+sort()
+.unshift()
+.pop()
+.shift()
+
+ESTRUTURA DE REPETIÇÃO
+
+for(x;b;){}
+contador++ = contador + 1
+var.push(); incrementar um valor a uma variavel
+
+FUNÇÃO
+
+function nome da função(a, b){
+}
+
+<tag>
+
+<style> personalização
+
+CURSO JS
+
+backgroundcolor cor do fundo
+
+*/ /* ou //linha demilitar todos entre eles como comentario
+
+typeof mostra o tipo de variavel
+
+Number.parseInt(var) string para numero inteiro
+Number.parseFloat(var) string para numero decimal
+Number(var) o propio js irá decidir pra qual passar
+
+String(var) numero para string
+var.toString() numero para string
+
+`%{var}` template string usado ´para substituir concatenação
+ 
+FORMATAÇÃO DE STRING
+
+var.length mostra quantos caracteres a string tem
+var.toUpperCase() tudo vira MAIUSCULO
+var.toLowerCase() tudo vira minusculo
+
+FORMATAÇÃO DE NUMEROS
+
+var.toFixed(numero de casas) coloca casas decimais 
+var.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) moeda
+.replace(',', '.') trocar 
+
+DOM (Document object model)
+
+ InerText e InerHtml(entre crases ``) o 1° muda o texto o 2° coloca-se tag tbm
