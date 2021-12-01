@@ -187,20 +187,25 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 26-1: _NodeJS - Introdução_
 - [x] 26-2: _NodeJS - Fluxo Assíncrono_
-- [x] 26-3: _NodeJS - Arquitetura_
-- [x] 26-4: _[Projeto - Store Manager]()_
+- [x] 26-3: _NodeJS - Testes com NodeJS_
+- [x] 26-4: _NodeJS - Express: HTTP com NodeJS_
+- [x] 26-5: _NodeJS - Express: Middlewares_
+- [x] 26-6: _[Projeto - Talker Manager]()_
 
-##### Bloco 27: NodeJS
+##### Bloco 27: NodeJS - Arquitetura REST e RESTful
 
-- [x] 27-1: _Express: HTTP com Node.js_
-- [x] 27-2: _Arquitetura de Software - Introdução ao MVC_
-- [ ] 27-3: _[Projeto - Cookmaster]()_
+- [x] 27-1: _NodeJS - Introdução Camada de Model_
+- [x] 27-2: _NodeJS - Camada de Controller e Service_
+- [x] 27-3: _NodeJS - Arquitetura web - Rest e Restful_
+- [x] 27-4: _NodeJS - Testando as Camadas_
+- [x] 27-5: _[Projeto - Store Manager]()_
 
 ##### Bloco 28: NodeJS
 
-- [ ] 28-1: _Arquitetura de Software - Camada de Serviço_
-- [ ] 28-2: _Arquitetura web - Rest e Restful_
-- [ ] 28-3: _[Projeto - Store Manager]()_
+- [x] 28-1: _NodeJS - JWT - (JSON Web Token)_
+- [x] 28-2: _NodeJS - Upload de arquicos com multer_
+- [x] 28-3: _NodeJS - Testes de integração_
+- [x] 28-4: _[Projeto - Cookmaster]()_
 
 ##### Bloco 29: NodeJS
 
