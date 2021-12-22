@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "Wellington",
+    "password": "36261971Ww@",
+    "database": "content_29",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "Wellington",
+    "password": "36261971Ww@",
+    "database": "content_29",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "Wellington",
+    "password": "36261971Ww@",
+    "database": "content_29",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
