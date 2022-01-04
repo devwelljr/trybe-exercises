@@ -215,9 +215,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 30: SOLID e ORM
 
-- [ ] 30-1: _Arquitetura - Princípios SOLID_
-- [ ] 30-2: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 30-3: _ORM - Associations_
+- [x] 30-1: _Arquitetura - Princípios SOLID_
+- [x] 30-2: _ORM - Interface da aplicação com o banco de dados_
+- [x] 30-3: _ORM - Associations_
 - [ ] 30-4: _[Projeto - API de Blogs]()_
 
 ##### Bloco 31: Sockets
