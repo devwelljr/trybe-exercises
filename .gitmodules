@@ -1,0 +1,3 @@
+[submodule "back-end/bloco_30/dia_1/back-end/bloco_30/dia_1/exercise/exercise-mvc"]
+	path = back-end/bloco_30/dia_1/back-end/bloco_30/dia_1/exercise/exercise-mvc
+	url = git@github.com:devwelljr/trybe-exercises.git
