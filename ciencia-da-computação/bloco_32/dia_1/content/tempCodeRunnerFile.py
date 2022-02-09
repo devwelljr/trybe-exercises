@@ -1,6 +1,8 @@
-my_list = [20, 20, 1, 2],
-count_elements = {
-    20: 2,
-    1: 1,
-    2: 2
-}
+def media(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total / len(numbers)
+
+
+print(media([2, 3, 6, 9]))
